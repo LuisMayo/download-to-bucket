@@ -1,0 +1,8 @@
+{
+  "name": "download-to.bucketp",
+  "version": "0.0.1",
+  "dependencies": {
+    "@google-cloud/storage": "^3.0.3",
+    "child_process": "^1.0.2"
+  }
+}
