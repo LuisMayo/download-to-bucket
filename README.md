@@ -1,3 +1,2 @@
 # download-to-bucket
-Google Cloud Function to download a file to a bucket.
-WIP, it doesn't work yet
+Google Cloud Function to download a file into a bucket.
