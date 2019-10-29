@@ -27,8 +27,9 @@ exports.downloadFile = (req, res) => {
         metadata: {
             cacheControl: 'no-cache',
         },
-    });
-
-    res.status(200).send(`${filename} uploaded to ${bucketName}.`);
-
+    }).then(
+        uploadResp => {
+            res.status(200).send(`${filename} uploaded to ${bucketName}.`);
+		},
+        err => {console.log('err')});
 };
