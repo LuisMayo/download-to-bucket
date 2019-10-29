@@ -9,7 +9,7 @@ exports.downloadFile = (req, res) => {
     const fileName = req.body.fileName;
     const child_process = require('child_process');
 
-    var wget = 'wget -P /tmp/ -O' + fileName + ' ' + url;
+    var wget = 'wget'+' -O /tmp/' + fileName + ' ' + url;
   // excute wget using child_process' exec function
 
   child_process.execSync(wget);
