@@ -18,7 +18,7 @@ exports.downloadFile = (req, res) => {
 
     // Creates a client
     const storage = new Storage();
-    const bucketName = 'luismayo-audio-input';
+    const bucketName = 'YOUR-BUCKET-NAME';
     const filename = '/tmp/' + fileName;
 
     // Uploads a local file to the bucket
